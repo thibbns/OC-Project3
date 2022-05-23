@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
 }
 
 .main-wrapper {
@@ -21,6 +22,28 @@ h2 {
   font-size: 24px;
 }
 
+.buttons__working {
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.working h2 {
+  margin-bottom: 30px;
+  padding-left: 18px;
+}
+
 body {
   font-family: "roboto", arial, "sans serif";
 }
@@ -28,7 +51,7 @@ body {
 .explore {
   background-color: #F6F6F6;
   text-align: center;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 40px 0px;
   padding: 30px 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,5 +111,68 @@ input {
 
 .button__explore {
   width: 200px;
+}
+
+.button__working {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 325px;
+  height: 75px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 28px 28px 28px 28px;
+  -webkit-box-shadow: 0px 3px 10px #aaaaaa;
+          box-shadow: 0px 3px 10px #aaaaaa;
+}
+
+.button__working:hover {
+  background-color: #F5EDFF;
+}
+
+.button__working .number {
+  background-color: #9356DC;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px 11px 11px 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: -10px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button__working .icon {
+  position: relative;
+  left: 10px;
+  color: #573b3b;
+  font-size: 20px;
+}
+
+.button__working .button__working--title {
+  position: relative;
+  left: 38px;
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */

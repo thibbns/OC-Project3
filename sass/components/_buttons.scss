@@ -13,3 +13,59 @@
 {
     width: 200px;
 }
+
+
+
+.button__working
+{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 325px;
+    height: 75px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 28px 28px 28px 28px;
+    @include box-shadow;
+
+    &:hover
+    {
+        background-color: $working-hover;
+    }
+
+    .number
+    {
+        background-color: $color-primary;
+        width: 22px;
+        height: 22px;
+        border-radius: 11px 11px 11px 11px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: -10px;
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon
+    {
+        position: relative;
+        left: 10px;
+        color: #573b3b;
+        font-size: 20px;
+    }
+
+
+    .button__working--title
+    {
+        position: relative;
+        left: 38px;
+        color: #000;
+    }
+    
+}
