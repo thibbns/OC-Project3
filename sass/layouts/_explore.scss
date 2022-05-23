@@ -1,0 +1,18 @@
+.explore
+{
+    background-color: $background-color;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p
+    {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 12px 0 32px 0;
+    }
+    
+}

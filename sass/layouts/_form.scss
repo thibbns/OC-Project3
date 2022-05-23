@@ -1,0 +1,28 @@
+input[type="text"i]
+{
+    background-color:$form;
+    border: none;
+    width: 130px;
+    font-family: $font-text;
+    font-size: 17px;
+    text-align: center;
+}
+
+input
+{
+    color: black;
+}
+
+.search--form
+{
+    background-color: $form;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    
+    p
+    {
+    margin: 0 0 0 0 ;
+    padding : 0 0 0 0;
+    color: rgb(0, 0, 0);
+    }
+}
