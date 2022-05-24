@@ -197,7 +197,7 @@ footer ul li {
   border-radius: 12px 12px 0 0;
 }
 
-.card .card__restaurant__presentation {
+.card .card__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,17 +214,17 @@ footer ul li {
   padding: 10px 20px 18px 14px;
 }
 
-.card .card__restaurant__presentation .card__restaurant__presentation__text--name {
+.card .card__text .card__text__description__title {
   font-weight: 600;
   font-size: 18px;
   padding-bottom: 3px;
 }
 
-.card .card__restaurant__presentation .card__restaurant__presentation__text--city {
+.card .card__text .card__text__description__subtitle {
   font-size: 17px;
 }
 
-.card .card__restaurant__presentation__like {
+.card .card__text__description__like {
   font-size: 25px;
 }
 

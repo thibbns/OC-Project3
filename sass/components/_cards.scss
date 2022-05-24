@@ -15,7 +15,7 @@
     
     }
 
-    .card__restaurant__presentation
+    .card__text
     {
         display: flex;
         flex-direction: row;
@@ -23,21 +23,21 @@
         justify-content: space-between;
         padding: 10px 20px 18px 14px;
 
-        .card__restaurant__presentation__text--name
+        .card__text__description__title
         {
             font-weight: 600;
             font-size: 18px;
             padding-bottom: 3px;
         }
 
-        .card__restaurant__presentation__text--city
+        .card__text__description__subtitle
         {
             font-size: 17px;
         }
    
     }
 
-    .card__restaurant__presentation__like
+    .card__text__description__like
     {
         font-size: 25px;
         
