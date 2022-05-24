@@ -33,7 +33,7 @@ h3 {
 }
 
 h4 {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 5px;
   font-weight: 400;
 }
@@ -189,6 +189,14 @@ footer ul li {
           box-shadow: 0px 3px 10px #aaaaaa;
 }
 
+.card--menu {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+}
+
 .card .restaurant-img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -214,18 +222,73 @@ footer ul li {
   padding: 10px 20px 18px 14px;
 }
 
+.card .card__text--menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 0px 10px;
+  height: 65px;
+  overflow: hidden;
+}
+
+.card .card__text__description {
+  width: 282px;
+}
+
 .card .card__text .card__text__description__title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 19px;
   padding-bottom: 3px;
 }
 
-.card .card__text .card__text__description__subtitle {
+.card .card__text .card__text__description__title--menu {
   font-size: 17px;
 }
 
-.card .card__text__description__like {
+.card .card__text .card__text__description__subtitle {
+  font-size: 16px;
+}
+
+.card .card__text .card__text__description__subtitle--menu {
+  font-size: 15px;
+}
+
+.card .card__text__description__right {
   font-size: 25px;
+}
+
+.card .card__text__description__right--price {
+  font-size: 15px;
+  font-weight: 600;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  width: 55px;
+  height: 65px;
+  border-radius: 0 12px 12px 0;
+  font-size: 20px;
+  color: white;
 }
 
 .explore {

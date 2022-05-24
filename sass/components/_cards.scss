@@ -6,6 +6,14 @@
     border-radius: 12px 12px 12px 12px;
     @include box-shadow;
 
+        &--menu
+        {
+            width: 95%;
+            display: flex;
+            margin-top: 12px;
+
+        }
+
     .restaurant-img
     {
         object-fit: cover;
@@ -23,23 +31,75 @@
         justify-content: space-between;
         padding: 10px 20px 18px 14px;
 
+            &--menu
+            {
+         
+                align-items:center;
+                justify-content: space-between;
+                padding: 0px 0px 0px 10px;
+                height:65px ;
+                overflow: hidden;
+            }
+
+            &__description
+            {
+                width: 282px;
+            }
+
         .card__text__description__title
         {
             font-weight: 600;
-            font-size: 18px;
+            font-size: 19px;
             padding-bottom: 3px;
+        
+            &--menu
+            {
+                font-size: 17px;
+            }
         }
 
         .card__text__description__subtitle
         {
-            font-size: 17px;
+            font-size: 16px;
+
+        &--menu
+        {
+            font-size: 15px;
         }
-   
+    }
     }
 
-    .card__text__description__like
+
+
+
+    .card__text__description__right
     {
         font-size: 25px;
-        
+     
+        &--price
+        {
+            font-size: 15px;
+            font-weight: 600;
+            align-self: flex-end;
+            padding-bottom: 10px;
+            margin-right: 20px;
+            
+        }
     }
 }
+
+.checked
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-tertiary;
+    width: 55px;
+    height: 65px;
+    border-radius: 0 12px 12px 0;
+    font-size: 20px;
+    color: white;
+    
+}
+
