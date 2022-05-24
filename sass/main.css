@@ -22,6 +22,15 @@ h2 {
   font-size: 24px;
 }
 
+h3 {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  padding-top: 40px;
+}
+
 .buttons__working {
   height: 260px;
   display: -webkit-box;
@@ -37,11 +46,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.working h2 {
-  margin-bottom: 30px;
-  padding-left: 18px;
 }
 
 body {
@@ -94,6 +98,27 @@ input {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   color: black;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  margin-top: 75px;
+}
+
+.restaurants .cards__restaurants {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1050px;
 }
 
 .button {
@@ -174,5 +199,52 @@ input {
   position: relative;
   left: 38px;
   color: #000;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 12px 12px 12px 12px;
+  -webkit-box-shadow: 0px 3px 10px #aaaaaa;
+          box-shadow: 0px 3px 10px #aaaaaa;
+}
+
+.card .restaurant-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 170px;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.card .card__restaurant__presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px 18px 14px;
+}
+
+.card .card__restaurant__presentation .card__restaurant__presentation__text--name {
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.card .card__restaurant__presentation .card__restaurant__presentation__text--city {
+  font-size: 17px;
+}
+
+.card .card__restaurant__presentation__like {
+  font-size: 25px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+
+.card
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px 12px 12px 12px;
+    @include box-shadow;
+
+    .restaurant-img
+    {
+        object-fit: cover;
+        height: 170px;
+        width: 100%;
+        border-radius: 12px 12px 0 0 ;
+    
+    }
+
+    .card__restaurant__presentation
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px 18px 14px;
+
+        .card__restaurant__presentation__text--name
+        {
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 3px;
+        }
+
+        .card__restaurant__presentation__text--city
+        {
+            font-size: 17px;
+        }
+   
+    }
+
+    .card__restaurant__presentation__like
+    {
+        font-size: 25px;
+        
+        .far.fa-heart
+        {
+            
+            
+        }
+    }
+}

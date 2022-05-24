@@ -1,0 +1,16 @@
+.restaurants
+{
+    background-color: $background-color;
+    margin-top: 75px;
+
+
+    .cards__restaurants
+    {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1050px;
+    }
+}
