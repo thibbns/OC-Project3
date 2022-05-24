@@ -3,16 +3,12 @@
 @import "./utils/extensions";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./layouts/working";
 @import "./layouts/body";
-@import "./layouts/explore";
 @import "./layouts/form";
 @import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/restaurants";
+@import "./layouts/footer";
 @import "./components/buttons";
 @import "./components/cards";
 @import "./pages/accueil";
-@import "./pages/menu1";
-@import "./pages/menu2";
-@import "./pages/menu3";
+@import "./pages/menu";
+
