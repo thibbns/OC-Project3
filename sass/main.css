@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+*:hover, *:active, a {
+  color: black;
+}
+
 .main-wrapper {
   width: 380px;
   margin: 0 auto 0 auto;
@@ -102,7 +106,6 @@ footer ul li {
 }
 
 .button {
-  background-color: #FF79DA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +115,7 @@ footer ul li {
   color: white;
   padding: 15px 12px 15px 12px;
   border-radius: 24px 24px 24px 24px;
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA 90px);
 }
 
 .button__explore {
