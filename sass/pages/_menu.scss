@@ -1,4 +1,5 @@
-
+@media all and (max-width: 768px) 
+{
 .cover img
 {
     object-fit: cover;
@@ -43,4 +44,6 @@
     width: 30px;
     height: 3px;
     background-color: $color-tertiary;
+}
+
 }
