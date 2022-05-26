@@ -1,3 +1,11 @@
+.new
+{
+    position: relative;
+    right: 20px;
+    top:20px;
+    
+}
+
 
 .card
 {
@@ -41,6 +49,7 @@
                 height:65px ;
                 width: 100%;
                 overflow: hidden;
+                
             }
 
             &__description
@@ -57,6 +66,7 @@
             &--menu
             {
                 font-size: 17px;
+                
             }
         }
 
@@ -115,4 +125,10 @@
     width: 100%;
 
 }
+
+
+
+
+
+
 }

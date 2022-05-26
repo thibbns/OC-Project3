@@ -89,12 +89,19 @@ input {
   font-size: 30px;
 }
 
+.flech {
+  font-size: 20px;
+  color: #353535;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
 footer {
   background-color: #353535;
   color: white;
   font-size: 15px;
   font-weight: 400;
-  margin-top: 60px;
 }
 
 footer ul {
@@ -127,9 +134,6 @@ footer ul li {
   padding: 15px 12px 15px 12px;
   border-radius: 24px 24px 24px 24px;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA 90px);
-}
-
-.button__explore {
   width: 200px;
 }
 
@@ -198,14 +202,24 @@ footer ul li {
   word-wrap: break-word;
 }
 
+.button--cmd {
+  margin: 50px auto 50px auto;
+}
+
 @media all and (max-width: 768px) {
   .button__working {
     width: 95%;
     margin: auto;
   }
   .button__working--title {
-    width: 100%;
+    width: 70%;
   }
+}
+
+.new {
+  position: relative;
+  right: 20px;
+  top: 20px;
 }
 
 .card {
@@ -415,7 +429,8 @@ footer ul li {
             flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    height: 1050px;
+    height: 1110px;
+    padding-bottom: 50px;
   }
 }
 
@@ -430,6 +445,7 @@ footer ul li {
 .main-wrapper__in {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 40px;
 }
 
 .menu {
