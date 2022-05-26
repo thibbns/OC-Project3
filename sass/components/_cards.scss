@@ -1,16 +1,17 @@
 
 .card
 {
-    width: 100%;
+    width: 48%;
     background-color: rgb(255, 255, 255);
     border-radius: 12px 12px 12px 12px;
     @include box-shadow;
 
         &--menu
         {
-            width: 95%;
+            width: 100%;
             display: flex;
             margin-top: 12px;
+
 
         }
 
@@ -38,12 +39,13 @@
                 justify-content: space-between;
                 padding: 0px 0px 0px 10px;
                 height:65px ;
+                width: 100%;
                 overflow: hidden;
             }
 
             &__description
             {
-                width: 282px;
+                width: 90%;
             }
 
         .card__text__description__title
@@ -103,3 +105,14 @@
     
 }
 
+@media all and (max-width: 768px) 
+{
+
+
+
+.card
+{
+    width: 100%;
+
+}
+}
