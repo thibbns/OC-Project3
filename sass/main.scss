@@ -1,8 +1,9 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/base";
 @import "./utils/extensions";
 @import "./utils/functions";
-@import "./utils/mixins";
+
 @import "./layouts/body";
 @import "./layouts/form";
 @import "./layouts/header";

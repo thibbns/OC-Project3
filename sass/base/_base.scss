@@ -4,18 +4,12 @@
 {
     box-sizing: border-box;
     text-decoration: none;
-    
 }
 
-*:hover, *:active, a
-{
-    color: black;
-}
 
 a
 {
     width: 100%;
-
 }
 
 
@@ -27,7 +21,7 @@ a
 
 h1
 {
-    margin:  0 0 0 0;
+    @include margin0
     font-family: $font-title;
     font-weight: 100;
     font-size: 28px;
@@ -35,24 +29,20 @@ h1
 
 h2
 {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    @include padding0
+    @include margin0
     font-size: 24px;
 }
 
 h3
 {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
     font-size: 24px;
-    margin-bottom: 20px;
-    padding-left: 18px;
-    padding-top: 40px;
+    margin: 0 0 20px 0;
+    padding : 40px 0 0 18px;
 }
 
 h4{
-    margin-top: 40px;
-    margin-bottom: 5px;
+    margin : 40px 0 5px 0;
     font-weight: 400;
 }
 
@@ -61,10 +51,10 @@ h4{
 @media all and (max-width: 768px) 
 {
 
-    .main-wrapper
-    {
-        width: 100%;
-        margin : 0 auto 0 auto;
-    }
+.main-wrapper
+{
+    width: 100%;
+    margin : 0 auto 0 auto;
+}
 
 }

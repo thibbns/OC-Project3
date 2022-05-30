@@ -1,4 +1,4 @@
-input[type="text"i]
+input[type="text"i], input[type="text"i]:focus
 {
     background-color:$form;
     border: none;
@@ -10,10 +10,28 @@ input[type="text"i]
 
 }
 
-input
+
+input[type="text"i]
 {
     color: black;
+
+
+    :focus
+    {
+        border: red;
+        outline:none;
+    }
+
 }
+
+
+input[type="text"i]#search:focus
+{
+    border : none;
+    color : red;
+    outline:none;
+}
+
 
 .search--form
 {

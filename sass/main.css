@@ -5,10 +5,6 @@
   text-decoration: none;
 }
 
-*:hover, *:active, a {
-  color: black;
-}
-
 a {
   width: 100%;
 }
@@ -32,17 +28,13 @@ h2 {
 }
 
 h3 {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
   font-size: 24px;
-  margin-bottom: 20px;
-  padding-left: 18px;
-  padding-top: 40px;
+  margin: 0 0 20px 0;
+  padding: 40px 0 0 18px;
 }
 
 h4 {
-  margin-top: 40px;
-  margin-bottom: 5px;
+  margin: 40px 0 5px 0;
   font-weight: 400;
 }
 
@@ -57,7 +49,7 @@ body {
   font-family: "roboto", arial, "sans serif";
 }
 
-input[type="text" i] {
+input[type="text" i], input[type="text" i]:focus {
   background-color: #EAEAEA;
   border: none;
   width: 130px;
@@ -66,8 +58,19 @@ input[type="text" i] {
   text-align: center;
 }
 
-input {
+input[type="text" i] {
   color: black;
+}
+
+input[type="text" i] :focus {
+  border: red;
+  outline: none;
+}
+
+input[type="text" i]#search:focus {
+  border: none;
+  color: red;
+  outline: none;
 }
 
 .search--form {
@@ -114,6 +117,14 @@ footer ul {
 footer ul li {
   list-style-type: none;
   padding-bottom: 5px;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
 
 .logo.footer {
@@ -163,6 +174,10 @@ footer ul li {
 
 .button__working:hover {
   background-color: #F5EDFF;
+}
+
+.button__working:hover i {
+  color: #9356DC;
 }
 
 .number {
@@ -228,6 +243,7 @@ footer ul li {
   border-radius: 12px 12px 12px 12px;
   -webkit-box-shadow: 0px 3px 10px #aaaaaa;
           box-shadow: 0px 3px 10px #aaaaaa;
+  position: relative;
 }
 
 .card--menu {
@@ -238,7 +254,7 @@ footer ul li {
   margin-top: 12px;
 }
 
-.card .restaurant-img {
+.restaurant-img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 170px;
@@ -246,7 +262,7 @@ footer ul li {
   border-radius: 12px 12px 0 0;
 }
 
-.card .card__text {
+.card__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +279,7 @@ footer ul li {
   padding: 10px 20px 18px 14px;
 }
 
-.card .card__text--menu {
+.card__text--menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -276,33 +292,33 @@ footer ul li {
   overflow: hidden;
 }
 
-.card .card__text__description {
+.card__text__description {
   width: 90%;
 }
 
-.card .card__text .card__text__description__title {
+.card__text__description__title {
   font-weight: 600;
   font-size: 19px;
   padding-bottom: 3px;
 }
 
-.card .card__text .card__text__description__title--menu {
+.card__text__description__title--menu {
   font-size: 17px;
 }
 
-.card .card__text .card__text__description__subtitle {
+.card__text__description__subtitle {
   font-size: 16px;
 }
 
-.card .card__text .card__text__description__subtitle--menu {
+.card__text__description__subtitle--menu {
   font-size: 15px;
 }
 
-.card .card__text__description__right {
+.card__text__description__right {
   font-size: 25px;
 }
 
-.card .card__text__description__right--price {
+.card__text__description__right--price {
   font-size: 15px;
   font-weight: 600;
   -ms-flex-item-align: end;
@@ -311,26 +327,23 @@ footer ul li {
   margin-right: 20px;
 }
 
-.checked {
+.new {
+  background-color: #99E2D0;
+  width: 100px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #99E2D0;
-  width: 55px;
-  height: 65px;
-  border-radius: 0 12px 12px 0;
-  font-size: 20px;
-  color: white;
+  color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 @media all and (max-width: 768px) {
@@ -481,5 +494,27 @@ footer ul li {
   width: 30px;
   height: 3px;
   background-color: #99E2D0;
+}
+
+.checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  width: 55px;
+  height: 65px;
+  border-radius: 0 12px 12px 0;
+  font-size: 20px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
