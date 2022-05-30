@@ -89,7 +89,12 @@ header {
 
 .logo {
   font-family: "shrikhand";
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px 0 0px 0;
   font-size: 30px;
   position: absolute;
@@ -101,6 +106,11 @@ header {
   position: relative;
   left: 10px;
   top: 15px;
+}
+
+.footer_background {
+  background-color: #353535;
+  padding-top: 10px;
 }
 
 footer {
@@ -135,6 +145,7 @@ footer ul li a:hover {
   text-align: left;
   padding-top: 10px;
   position: unset;
+  display: block;
 }
 
 @media all and (max-width: 768px) {
@@ -487,11 +498,6 @@ footer ul li a:hover {
   height: 520px;
 }
 
-.footer_background {
-  background-color: #353535;
-  padding-top: 10px;
-}
-
 @media all and (max-width: 768px) {
   .buttons__working {
     display: -webkit-box;
@@ -537,15 +543,10 @@ footer ul li a:hover {
   margin-bottom: 0;
 }
 
-.main-wrapper__in {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
-}
-
 .menu {
   background-color: #F6F6F6;
   padding-top: 30px;
+  padding-bottom: 10px;
   position: relative;
   top: -30px;
   border-radius: 30px 30px 0 0;
@@ -576,5 +577,12 @@ footer ul li a:hover {
   width: 30px;
   height: 3px;
   background-color: #99E2D0;
+}
+
+@media all and (max-width: 768px) {
+  .main-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
