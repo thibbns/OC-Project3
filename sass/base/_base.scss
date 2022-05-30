@@ -21,7 +21,7 @@ a
 
 h1
 {
-    @include margin0
+    @include margin0;
     font-family: $font-title;
     font-weight: 100;
     font-size: 28px;
@@ -29,8 +29,8 @@ h1
 
 h2
 {
-    @include padding0
-    @include margin0
+    @include padding0;
+    @include margin0;
     font-size: 24px;
 }
 
