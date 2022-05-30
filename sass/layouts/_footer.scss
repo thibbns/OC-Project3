@@ -34,13 +34,21 @@ footer
                 
             }
         }
-    
-    
-    
     }
     }
     
     }
+
+.icon_footer
+{
+    width: 25px;
+    display: inline-block;
+}
+
+.text_footer
+{
+    display: inline-block;
+}
 
 
 .logo.footer
@@ -48,6 +56,7 @@ footer
     font-size: 18px;
     text-align: left;
     padding-top: 10px;
+    padding-bottom: 15px;
     position: unset;
     display: block;
 }

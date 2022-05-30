@@ -50,17 +50,18 @@
         height:65px ;
         width: 100%;                
     }
+}
 
-    &__description
+.card__text__description
+{
+    width: 90%;
+
+    &--menu
     {
-        width: 90%;
-
-        &--menu
-        {
-            width: 600px;
-        }
+        width: 600px;
     }
 }
+
 
 .card__text__description__title
 {
@@ -70,6 +71,7 @@
         
     &--menu
     {
+        width: 600px;
         font-size: 17px;
         @include ellipsis;               
     }
@@ -93,6 +95,7 @@
      
     &--price
     {
+        width: 40px;
         font-size: 15px;
         font-weight: 600;
         align-self: flex-end;
@@ -149,23 +152,36 @@
 
 }
 
-.card__text__description--menu
+.card--menu
 {
-    width: 65%;
+    width: 100%;
 }
 
-.checked
+.card__text--menu
 {
-    width: 55px;
+    width: 85%;
+}
+
+.card__text__description--menu
+{
+    width: 83%;
+}
+
+.card__text__description__title
+{
+    width: 100%;
 }
 
 .card__text__description__right--price
 {
-    width: 15%;
+    width: 17%;
     margin-right: 0%;
     display: flex;
     justify-content: center;
 }
 
-
+.checked
+{
+    width: 15%;
+}
 }
