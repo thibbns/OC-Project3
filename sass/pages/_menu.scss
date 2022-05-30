@@ -47,20 +47,7 @@
     background-color: $color-tertiary;
 }
 
-.checked
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-tertiary;
-    width: 55px;
-    height: 65px;
-    border-radius: 0 12px 12px 0;
-    font-size: 20px;
-    color: white;
-    
-}
+
 
 @media all and (max-width: 768px) 
 {

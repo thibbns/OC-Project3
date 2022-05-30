@@ -280,11 +280,14 @@ footer ul li a:hover {
   padding: 0px 0px 0px 10px;
   height: 65px;
   width: 100%;
-  overflow: hidden;
 }
 
 .card__text__description {
   width: 90%;
+}
+
+.card__text__description--menu {
+  width: 600px;
 }
 
 .card__text__description__title {
@@ -295,6 +298,9 @@ footer ul li a:hover {
 
 .card__text__description__title--menu {
   font-size: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .card__text__description__subtitle {
@@ -303,6 +309,9 @@ footer ul li a:hover {
 
 .card__text__description__subtitle--menu {
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .card__text__description__right {
@@ -314,8 +323,31 @@ footer ul li a:hover {
   font-weight: 600;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   margin-right: 20px;
+  margin-left: 5px;
+}
+
+.checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  width: 55px;
+  height: 65px;
+  border-radius: 0 12px 12px 0;
+  font-size: 20px;
+  color: white;
 }
 
 .new {
@@ -342,6 +374,22 @@ footer ul li a:hover {
 @media all and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+  .card__text__description--menu {
+    width: 65%;
+  }
+  .checked {
+    width: 20%;
+  }
+  .card__text__description__right--price {
+    width: 15%;
+    margin-right: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -383,7 +431,7 @@ footer ul li a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 97%;
-  margin: auto;
+  margin: 0 0 0 22px;
 }
 
 .restaurants {
@@ -427,6 +475,7 @@ footer ul li a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin: auto;
   }
   .restaurants .cards__restaurants {
     -webkit-box-orient: vertical;
@@ -487,27 +536,5 @@ footer ul li a:hover {
   width: 30px;
   height: 3px;
   background-color: #99E2D0;
-}
-
-.checked {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #99E2D0;
-  width: 55px;
-  height: 65px;
-  border-radius: 0 12px 12px 0;
-  font-size: 20px;
-  color: white;
 }
 /*# sourceMappingURL=main.css.map */
