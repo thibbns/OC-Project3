@@ -4,3 +4,12 @@
 
 @mixin padding0 {padding : 0 0 0 0}
 
+@mixin text-new ($colour : $color-tertiary){
+    @if (lightness($color-tertiary)<25%){
+        $colour: lighten($color-tertiary,10%);
+    }else{
+        $colour:darken($color-tertiary, 40%);
+    }
+    color : $colour;
+}
+

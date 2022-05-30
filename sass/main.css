@@ -58,18 +58,9 @@ input[type="text" i], input[type="text" i]:focus {
   text-align: center;
 }
 
-input[type="text" i] {
-  color: black;
-}
-
-input[type="text" i] :focus {
-  border: red;
-  outline: none;
-}
-
 input[type="text" i]#search:focus {
   border: none;
-  color: red;
+  color: black;
   outline: none;
 }
 
@@ -223,7 +214,7 @@ footer ul li a:hover {
 
 @media all and (max-width: 768px) {
   .button__working {
-    width: 95%;
+    width: 90%;
     margin: auto;
   }
   .button__working--title {
@@ -329,8 +320,8 @@ footer ul li a:hover {
 
 .new {
   background-color: #99E2D0;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,8 +333,10 @@ footer ul li a:hover {
           align-items: center;
   color: black;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 10px;
+  color: #278870;
+  font-weight: 500;
 }
 
 @media all and (max-width: 768px) {
