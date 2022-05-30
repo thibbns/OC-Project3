@@ -14,6 +14,7 @@
         font-size: 18px;
         font-weight: 300;
         margin: 12px 0 32px 0;
+        padding: 0 20px 0 20px;
     }
     
 }
@@ -35,20 +36,34 @@
 {
     background-color: $background-color;
     margin-top: 40px;
+    padding-bottom: 50px;
+    padding: auto;
 
-
-    .cards__restaurants
+    &--title
     {
-        width: 90%;
+        width: 760px;
         margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        height: 520px;
-        
     }
+}
+    
+.cards__restaurants
+{
+    width: 760px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 520px;
+}
+
+
+.footer_background
+{
+    background-color: #353535;
+    padding-top: 10px;
+
 }
 
 @media all and (max-width: 768px) 
@@ -58,8 +73,6 @@
 
 .buttons__working
 {
-    
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,20 +81,26 @@
     margin: auto;
 }
 
-
 .restaurants
 {
-    .cards__restaurants
-    {
-
- 
-        flex-direction: column;
-        flex-wrap: nowrap;        
-        height: 1110px;
-        padding-bottom: 50px;
-        
-    }
+    background-color: $background-color;
+    margin-top: 40px;
+    padding-bottom: 0px;
+    padding: auto;
 }
+
+
+
+.cards__restaurants
+{
+    flex-direction: column;
+    flex-wrap: nowrap;        
+    height: 1110px;
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+
 
 }
 

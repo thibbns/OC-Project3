@@ -76,19 +76,31 @@ input[type="text" i]#search:focus {
   color: black;
 }
 
+header {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .logo {
   font-family: "shrikhand";
   text-align: center;
   margin: 10px 0 0px 0;
   font-size: 30px;
+  position: absolute;
 }
 
 .flech {
   font-size: 20px;
   color: #353535;
-  position: absolute;
+  position: relative;
   left: 10px;
-  top: 20px;
+  top: 15px;
 }
 
 footer {
@@ -96,18 +108,18 @@ footer {
   color: white;
   font-size: 15px;
   font-weight: 400;
+  width: 760px;
+  margin: auto;
 }
 
 footer ul {
-  padding-left: 5%;
-  margin-top: 15px;
-  margin-bottom: 0;
-  padding-bottom: 15px;
+  padding: 0 0 20px 0;
+  margin: 0;
 }
 
 footer ul li {
   list-style-type: none;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 
 footer ul li a {
@@ -121,8 +133,16 @@ footer ul li a:hover {
 .logo.footer {
   font-size: 18px;
   text-align: left;
-  padding-left: 5%;
-  padding-top: 20px;
+  padding-top: 10px;
+  position: unset;
+}
+
+@media all and (max-width: 768px) {
+  footer {
+    width: 90%;
+    padding-top: 0px;
+    margin-top: 0;
+  }
 }
 
 .button {
@@ -379,7 +399,7 @@ footer ul li a:hover {
     width: 65%;
   }
   .checked {
-    width: 20%;
+    width: 55px;
   }
   .card__text__description__right--price {
     width: 15%;
@@ -414,6 +434,7 @@ footer ul li a:hover {
   font-size: 18px;
   font-weight: 300;
   margin: 12px 0 32px 0;
+  padding: 0 20px 0 20px;
 }
 
 .buttons__working {
@@ -437,10 +458,17 @@ footer ul li a:hover {
 .restaurants {
   background-color: #F6F6F6;
   margin-top: 40px;
+  padding-bottom: 50px;
+  padding: auto;
 }
 
-.restaurants .cards__restaurants {
-  width: 90%;
+.restaurants--title {
+  width: 760px;
+  margin: auto;
+}
+
+.cards__restaurants {
+  width: 760px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,6 +485,11 @@ footer ul li a:hover {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   height: 520px;
+}
+
+.footer_background {
+  background-color: #353535;
+  padding-top: 10px;
 }
 
 @media all and (max-width: 768px) {
@@ -477,7 +510,13 @@ footer ul li a:hover {
             justify-content: space-between;
     margin: auto;
   }
-  .restaurants .cards__restaurants {
+  .restaurants {
+    background-color: #F6F6F6;
+    margin-top: 40px;
+    padding-bottom: 0px;
+    padding: auto;
+  }
+  .cards__restaurants {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -486,6 +525,7 @@ footer ul li a:hover {
         flex-wrap: nowrap;
     height: 1110px;
     padding-bottom: 50px;
+    width: 90%;
   }
 }
 

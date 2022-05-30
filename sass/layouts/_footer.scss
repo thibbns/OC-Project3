@@ -5,19 +5,19 @@ footer
     color: white;
     font-size: 15px;
     font-weight: 400;
+    width: 760px;
+    margin: auto;
 
 
     ul
     {
-        padding-left: 5%;
-        margin-top: 15px;
-        margin-bottom: 0;
-        padding-bottom: 15px;
-   
+    padding : 0 0 20px 0;
+    margin: 0;
+    
     li
     {
         list-style-type: none;
-        padding-bottom: 5px;
+        padding-bottom: 7px;
     
         a{
             color:rgb(255, 255, 255);
@@ -32,17 +32,28 @@ footer
     
     
     }
-
+    }
     
     }
-}
+
 
 .logo.footer
 {
     font-size: 18px;
     text-align: left;
-    padding-left: 5%;
-    padding-top: 20px;
+    padding-top: 10px;
+    position: unset;
 }
 
 
+@media all and (max-width: 768px) 
+{
+
+
+footer
+{
+    width: 90%;
+   padding-top: 0px;
+   margin-top: 0;
+}
+}
