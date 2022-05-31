@@ -22,7 +22,7 @@
 .working h3
 {
     margin-top: 0;
-    padding-left: 0;
+    padding-left: 0 0 0 18px;
 }
 
 .buttons__working
@@ -70,7 +70,11 @@
 @media all and (max-width: 768px) 
 {
 
-
+.working h3
+{
+    margin-top: 0;
+    padding-left: 0;
+}
 
 .buttons__working
 {

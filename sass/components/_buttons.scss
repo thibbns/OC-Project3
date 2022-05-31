@@ -13,6 +13,7 @@
     &:hover
     {
         @include box-shadow ($box-shadow-color-hover);
+        background-image: linear-gradient(to top left,lighten($color-primary, 5%),lighten($color-secondary, 5%) 90px);
     }
 }
 

@@ -181,6 +181,7 @@ footer ul li a:hover {
 .button:hover {
   -webkit-box-shadow: 0px 3px 10px #828282;
           box-shadow: 0px 3px 10px #828282;
+  background-image: linear-gradient(to top left, #a16be0, #ff93e1 90px);
 }
 
 .button__working {
@@ -279,6 +280,7 @@ footer ul li a:hover {
   -webkit-box-shadow: 0px 3px 10px #c3c3c3;
           box-shadow: 0px 3px 10px #c3c3c3;
   position: relative;
+  color: black;
 }
 
 .card--menu {
@@ -287,6 +289,14 @@ footer ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 12px;
+}
+
+.card:active {
+  color: black;
+}
+
+.card:visited {
+  color: black;
 }
 
 .restaurant-img {
@@ -474,7 +484,7 @@ footer ul li a:hover {
 
 .working h3 {
   margin-top: 0;
-  padding-left: 0;
+  padding-left: 0 0 0 18px;
 }
 
 .buttons__working {
@@ -528,6 +538,10 @@ footer ul li a:hover {
 }
 
 @media all and (max-width: 768px) {
+  .working h3 {
+    margin-top: 0;
+    padding-left: 0;
+  }
   .buttons__working {
     display: -webkit-box;
     display: -ms-flexbox;
