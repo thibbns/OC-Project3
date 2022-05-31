@@ -36,6 +36,7 @@
     &:hover
     {
         background-color: $working-hover;
+        @include box-shadow-hover;
     
         i
         {

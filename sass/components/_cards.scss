@@ -24,6 +24,11 @@
 
     }
 
+    &:hover
+    {
+        @include box-shadow-hover;
+    }
+
     &:active
     {
         color: black;

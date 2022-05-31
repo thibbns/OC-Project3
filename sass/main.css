@@ -210,6 +210,8 @@ footer ul li a:hover {
 
 .button__working:hover {
   background-color: #F5EDFF;
+  -webkit-box-shadow: 0px 3px 10px #828282;
+          box-shadow: 0px 3px 10px #828282;
 }
 
 .button__working:hover i {
@@ -289,6 +291,11 @@ footer ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 12px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 3px 10px #828282;
+          box-shadow: 0px 3px 10px #828282;
 }
 
 .card:active {
