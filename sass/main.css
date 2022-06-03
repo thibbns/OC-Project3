@@ -407,6 +407,24 @@ footer ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 12px;
+  overflow: hidden;
+}
+
+.card--menu:hover > .checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: checked-apparait 0.5s;
+          animation: checked-apparait 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card--menu:hover .card__text__description__right--price {
+  -webkit-animation: price 0.5s;
+          animation: price 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .card:hover {
@@ -507,6 +525,32 @@ footer ul li a:hover {
   margin-left: 5px;
 }
 
+@-webkit-keyframes checked-apparait {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translateX(55px);
+            transform: translateX(55px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes checked-apparait {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translateX(55px);
+            transform: translateX(55px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+}
+
 .checked {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,6 +571,46 @@ footer ul li a:hover {
   border-radius: 0 12px 12px 0;
   font-size: 20px;
   color: white;
+  display: none;
+}
+
+@keyframes checked-apparait {
+  0% {
+    -webkit-transform: translateX(55px);
+            transform: translateX(55px);
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes price {
+  0% {
+    -webkit-transform: translateX(55px);
+            transform: translateX(55px);
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes price {
+  0% {
+    -webkit-transform: translateX(55px);
+            transform: translateX(55px);
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+  }
 }
 
 .new {
@@ -558,7 +642,7 @@ footer ul li a:hover {
     width: 100%;
   }
   .card__text--menu {
-    width: 85%;
+    width: 100%;
   }
   .card__text__description--menu {
     width: 83%;
@@ -575,6 +659,30 @@ footer ul li a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  @-webkit-keyframes checked-apparait {
+    0% {
+      visibility: hidden;
+      -webkit-transform: translateX(115%);
+              transform: translateX(115%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes checked-apparait {
+    0% {
+      visibility: hidden;
+      -webkit-transform: translateX(115%);
+              transform: translateX(115%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      visibility: visible;
+    }
   }
   .checked {
     width: 15%;

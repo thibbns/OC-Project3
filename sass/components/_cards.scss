@@ -21,8 +21,27 @@
         width: 100%;
         display: flex;
         margin-top: 12px;
+        overflow: hidden;
 
-    }
+        &:hover>.checked
+        {
+         display: flex;  
+        animation: checked-apparait 0.5s;
+        animation-fill-mode: backwards;
+        }
+
+        &:hover
+        {
+            .card__text__description__right--price
+            {
+               
+                animation: price 0.5s;
+                animation-fill-mode: backwards;
+            }
+        }
+
+
+        }
 
     &:hover
     {
@@ -40,6 +59,7 @@
     }
 
 }
+
 
 .restaurant-img
 {
@@ -65,7 +85,9 @@
         justify-content: space-between;
         padding: 0px 0px 0px 10px;
         height:65px ;
-        width: 100%;                
+        width: 100%; 
+
+               
     }
 }
 
@@ -118,9 +140,25 @@
         align-self: flex-end;
         padding-bottom: 11px;
         margin-right: 20px;
-        margin-left: 5px;
-            
+        margin-left: 5px;    
+
     }
+}
+
+
+@keyframes checked-apparait
+{
+0%
+{
+    visibility: hidden;
+    transform: translateX(55px) ;
+}
+
+100%
+{
+    transform: translateX(0);
+    visibility: visible;
+}
 }
 
 .checked
@@ -135,8 +173,36 @@
     border-radius: 0 12px 12px 0;
     font-size: 20px;
     color: white;
-    
+display: none;
 }
+
+@keyframes checked-apparait
+{
+0%
+{
+    transform: translateX(55px) ;
+visibility: hidden;
+}
+
+100%
+{
+    transform: translateX(0);
+    visibility: visible;
+}
+}
+
+
+@keyframes price
+{
+    0%
+    {transform: translateX(55px);
+    visibility: hidden;}
+
+    100%
+    {transform: translateX(0);
+    visibility: visible;}
+}
+
 
 
 .new
@@ -158,6 +224,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 768px) 
 {
 
@@ -176,7 +252,7 @@
 
 .card__text--menu
 {
-    width: 85%;
+    width: 100%;
 }
 
 .card__text__description--menu
@@ -195,10 +271,33 @@
     margin-right: 0%;
     display: flex;
     justify-content: center;
+
+
+
 }
+@keyframes checked-apparait
+{
+0%
+{
+    visibility: hidden;
+    transform: translateX(115%) ;
+}
+
+100%
+{
+    transform: translateX(0);
+    visibility: visible;
+}
+}
+
+
 
 .checked
 {
     width: 15%;
+
 }
 }
+
+
+
