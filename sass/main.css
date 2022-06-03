@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
-* {
+*, ::before, ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
@@ -38,6 +38,122 @@ h4 {
   .main-wrapper {
     width: 100%;
     margin: 0 auto 0 auto;
+  }
+}
+
+.card1 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card2 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card3 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card4 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card5 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card6 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card7 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card8 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card9 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card10 {
+  -webkit-animation: apparait 1s;
+          animation: apparait 1s;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes apparait {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes apparait {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -594,6 +710,12 @@ footer ul li a:hover {
   width: 100%;
   height: 250px;
   margin-bottom: 0;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  background-color: #F6F6F6;
 }
 
 .menu {

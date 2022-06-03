@@ -8,6 +8,13 @@
 }
 
 
+.absolute
+{
+    position: absolute;
+    width: 100%;
+    background-color: $background-color;
+}
+
 
 .menu
 {
@@ -42,6 +49,9 @@
     height: 3px;
     background-color: $color-tertiary;
 }
+
+
+
 
 
 

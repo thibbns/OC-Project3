@@ -1,0 +1,77 @@
+
+
+.loader
+{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    margin: 150px 25%;
+    background-color: rgb(255, 255, 255);
+}
+
+.chargement
+{
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+
+.anim_loader
+{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.point--primary
+{
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    animation: monte 0.3s alternate infinite;
+    animation-delay: 0.1s;
+    transition-duration: 3s;
+}
+
+.point--secondary
+{
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    animation: monte 0.3s alternate infinite;
+    animation-delay: 0.2s
+}
+
+
+.point--tertiary
+{
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $color-tertiary;
+    animation: monte 0.3s alternate infinite;
+    animation-delay: 0.3s;
+    
+}
+
+@keyframes monte 
+{
+    100%{
+        transform:translateY(-30px);
+        
+    }
+}
+
