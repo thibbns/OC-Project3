@@ -427,17 +427,47 @@ footer ul li a:hover {
           animation-fill-mode: backwards;
 }
 
+.card--menu:hover .checked .fa-check-circle {
+  -webkit-animation: rotate 0.5s;
+          animation: rotate 0.5s;
+}
+
+.card--menu:hover .card__text__description__title,
+.card--menu:hover .card__text__description__subtitle {
+  -webkit-animation: ellipsis 0.5s;
+          animation: ellipsis 0.5s;
+}
+
 .card:hover {
   -webkit-box-shadow: 0px 3px 10px #828282;
           box-shadow: 0px 3px 10px #828282;
 }
 
-.card:active {
+.card:active,
+.card :visited {
   color: black;
 }
 
-.card:visited {
-  color: black;
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .restaurant-img {
@@ -497,6 +527,24 @@ footer ul li a:hover {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@-webkit-keyframes ellipsis {
+  0% {
+    width: 115%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes ellipsis {
+  0% {
+    width: 115%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .card__text__description__subtitle {
@@ -687,6 +735,34 @@ footer ul li a:hover {
   .checked {
     width: 15%;
   }
+}
+
+.card--menu:active > .checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: checked-apparait 0.5s;
+          animation: checked-apparait 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card--menu:active .card__text__description__right--price {
+  -webkit-animation: price 0.5s;
+          animation: price 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.card--menu:active .checked .fa-check-circle {
+  -webkit-animation: rotate 0.5s;
+          animation: rotate 0.5s;
+}
+
+.card--menu:active .card__text__description__title,
+.card--menu:active .card__text__description__subtitle {
+  -webkit-animation: ellipsis 0.5s;
+          animation: ellipsis 0.5s;
 }
 
 .explore {
