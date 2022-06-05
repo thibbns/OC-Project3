@@ -163,6 +163,113 @@ body {
   font-family: "roboto", arial, "sans serif";
 }
 
+.loader {
+  position: fixed;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-animation: disparait 3s forwards;
+          animation: disparait 3s forwards;
+  visibility: visible;
+}
+
+.chargement {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+}
+
+.anim_loader {
+  width: 200px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.point--primary {
+  margin: 0px 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  -webkit-animation: monte 0.3s alternate infinite;
+          animation: monte 0.3s alternate infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.point--secondary {
+  margin: 0px 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF79DA;
+  -webkit-animation: monte 0.3s alternate infinite;
+          animation: monte 0.3s alternate infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.point--tertiary {
+  margin: 0px 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+  -webkit-animation: monte 0.3s alternate infinite;
+          animation: monte 0.3s alternate infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes monte {
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes monte {
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes disparait {
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes disparait {
+  100% {
+    visibility: hidden;
+  }
+}
+
 input[type="text" i], input[type="text" i]:focus {
   background-color: #EAEAEA;
   border: none;
