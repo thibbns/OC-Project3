@@ -41,6 +41,32 @@ h4 {
   }
 }
 
+@-webkit-keyframes monte {
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes monte {
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes disparait {
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes disparait {
+  100% {
+    visibility: hidden;
+  }
+}
+
 @-webkit-keyframes apparait {
   0% {
     opacity: 0%;
@@ -242,32 +268,6 @@ body {
           animation: monte 0.3s alternate infinite;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
-}
-
-@-webkit-keyframes monte {
-  100% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-}
-
-@keyframes monte {
-  100% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-}
-
-@-webkit-keyframes disparait {
-  100% {
-    visibility: hidden;
-  }
-}
-
-@keyframes disparait {
-  100% {
-    visibility: hidden;
-  }
 }
 
 input[type="text" i], input[type="text" i]:focus {
@@ -482,6 +482,30 @@ footer ul li a:hover {
 
 .button--cmd {
   margin: 50px auto 50px auto;
+}
+
+.like_empty {
+  position: relative;
+  z-index: 1;
+}
+
+.like_empty:hover::after {
+  opacity: 1;
+}
+
+.like_empty::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 @media all and (max-width: 768px) {

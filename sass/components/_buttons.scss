@@ -91,6 +91,32 @@
 
 
 
+.like_empty {
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom,$color-primary,$color-secondary );
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 1s;
+    }
+}
+
+
+
+
 @media all and (max-width: 768px) 
 {
 

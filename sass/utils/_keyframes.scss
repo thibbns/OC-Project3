@@ -1,3 +1,16 @@
+@keyframes monte {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes disparait {
+    100% {
+        visibility: hidden;
+    }
+}
+
+
 @keyframes apparait {
     0% {
         opacity: 0%;
