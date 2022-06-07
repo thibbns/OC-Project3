@@ -23,11 +23,13 @@ input[type="text"i]#search:focus
     background-color: $form;
     text-align: center;
     padding: 15px 0 15px 0;
+    box-shadow: 0 7px 5px -5px $box-shadow-color inset;
     
     p
     {
     margin: 0 0 0 0 ;
     padding : 0 0 0 0;
     color: rgb(0, 0, 0);
+    
     }
 }
