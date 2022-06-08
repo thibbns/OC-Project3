@@ -1,6 +1,6 @@
-input[type="text"i], input[type="text"i]:focus
-{
-    background-color:$form;
+input[type="text"i],
+input[type="text"i]:focus {
+    background-color: $form;
     border: none;
     width: 130px;
     font-family: $font-text;
@@ -10,26 +10,23 @@ input[type="text"i], input[type="text"i]:focus
 
 }
 
-input[type="text"i]#search:focus
-{
-    border : none;
-    color : rgb(0, 0, 0);
-    outline:none;
+input[type="text"i]#search:focus {
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
 }
 
 
-.search--form
-{
+.search--form {
     background-color: $form;
     text-align: center;
     padding: 15px 0 15px 0;
     box-shadow: 0 7px 5px -5px $box-shadow-color inset;
-    
-    p
-    {
-    margin: 0 0 0 0 ;
-    padding : 0 0 0 0;
-    color: rgb(0, 0, 0);
-    
+
+    p {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        color: rgb(0, 0, 0);
+
     }
 }

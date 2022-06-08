@@ -270,7 +270,8 @@ body {
           animation-delay: 0.3s;
 }
 
-input[type="text" i], input[type="text" i]:focus {
+input[type="text" i],
+input[type="text" i]:focus {
   background-color: #EAEAEA;
   border: none;
   width: 130px;
