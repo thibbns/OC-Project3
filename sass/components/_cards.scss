@@ -14,7 +14,6 @@
 
     &--menu {
         width: 100%;
-        display: flex;
         margin-top: 12px;
         overflow: hidden;
 
@@ -71,7 +70,6 @@
         justify-content: space-between;
         padding: 0px 0px 0px 10px;
         height: 65px;
-        width: 100%;
     }
 }
 
@@ -79,7 +77,8 @@
     width: 90%;
 
     &--menu {
-        width: 600px;
+        width: auto;
+        @include ellipsis;
     }
 }
 
@@ -89,7 +88,6 @@
     padding-bottom: 3px;
 
     &--menu {
-        width: 600px;
         font-size: 17px;
         @include ellipsis;
     }
@@ -104,19 +102,26 @@
     }
 }
 
-
 .card__text__description__right {
     font-size: 25px;
 
     &--price {
-        width: 40px;
+
         font-size: 15px;
+        height: 65px;
         font-weight: 600;
-        align-self: flex-end;
-        padding-bottom: 11px;
-        margin-right: 20px;
-        margin-left: 5px;
+        padding-top: 35px;
+        padding-right: 15px;
+        padding-left: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
+}
+
+
+.price-and-check {
+    display: flex;
 }
 
 .checked {
@@ -222,35 +227,9 @@
 @media all and (max-width: 768px) {
 
 
-
     .card {
         width: 100%;
     }
 
-    .card--menu {
-        width: 100%;
-    }
-
-    .card__text--menu {
-        width: 100%;
-    }
-
-    .card__text__description--menu {
-        width: 83%;
-    }
-
-    .card__text__description__title {
-        width: 100%;
-    }
-
-    .card__text__description__right--price {
-        width: 17%;
-        margin-right: 0%;
-        display: flex;
-        justify-content: center;
-
-
-
-    }
 
 }
