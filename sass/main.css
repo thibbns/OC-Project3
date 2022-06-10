@@ -487,16 +487,16 @@ footer ul li a:hover {
   margin: 50px auto 50px auto;
 }
 
-.like_empty {
+.like {
   position: relative;
   z-index: 1;
 }
 
-.like_empty:hover::after {
+.like:hover .bg {
   opacity: 1;
 }
 
-.like_empty::after {
+.like .bg {
   content: "";
   position: absolute;
   top: 0;
@@ -505,10 +505,13 @@ footer ul li a:hover {
   left: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   z-index: -1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity ease-in-out 1s;
+  transition: opacity ease-in-out 1s;
 }
 
 @media all and (max-width: 768px) {
@@ -974,7 +977,6 @@ footer ul li a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 30px 0 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
