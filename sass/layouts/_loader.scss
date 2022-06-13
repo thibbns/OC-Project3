@@ -10,7 +10,7 @@
     margin: 0;
 
     background-color: rgba(255, 255, 255, 0.8);
-    animation: disparait 3s forwards;
+    animation: disappear 3s forwards;
     visibility: visible;
 }
 
@@ -35,7 +35,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: $color-primary;
-    animation: monte 0.3s alternate infinite;
+    animation: ascend 0.3s alternate infinite;
     animation-delay: 0.1s;
 
 
@@ -47,7 +47,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: $color-secondary;
-    animation: monte 0.3s alternate infinite;
+    animation: ascend 0.3s alternate infinite;
     animation-delay: 0.2s;
 
 
@@ -61,7 +61,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: $color-tertiary;
-    animation: monte 0.3s alternate infinite;
+    animation: ascend 0.3s alternate infinite;
     animation-delay: 0.3s;
 
 }

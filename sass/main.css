@@ -41,33 +41,33 @@ h4 {
   }
 }
 
-@-webkit-keyframes monte {
+@-webkit-keyframes ascend {
   100% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
   }
 }
 
-@keyframes monte {
+@keyframes ascend {
   100% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
   }
 }
 
-@-webkit-keyframes disparait {
+@-webkit-keyframes disappear {
   100% {
     visibility: hidden;
   }
 }
 
-@keyframes disparait {
+@keyframes disappear {
   100% {
     visibility: hidden;
   }
 }
 
-@-webkit-keyframes apparait {
+@-webkit-keyframes appear {
   0% {
     opacity: 0%;
     -webkit-transform: translateY(10px);
@@ -80,7 +80,7 @@ h4 {
   }
 }
 
-@keyframes apparait {
+@keyframes appear {
   0% {
     opacity: 0%;
     -webkit-transform: translateY(10px);
@@ -133,7 +133,7 @@ h4 {
   }
 }
 
-@-webkit-keyframes checked-apparait {
+@-webkit-keyframes checked-appear {
   0% {
     visibility: visible;
     -webkit-transform: translateX(55px);
@@ -146,7 +146,7 @@ h4 {
   }
 }
 
-@keyframes checked-apparait {
+@keyframes checked-appear {
   0% {
     visibility: visible;
     -webkit-transform: translateX(55px);
@@ -209,8 +209,8 @@ body {
   height: 100%;
   margin: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-animation: disparait 3s forwards;
-          animation: disparait 3s forwards;
+  -webkit-animation: disappear 3s forwards;
+          animation: disappear 3s forwards;
   visibility: visible;
 }
 
@@ -240,8 +240,8 @@ body {
   height: 20px;
   border-radius: 50%;
   background-color: #9356DC;
-  -webkit-animation: monte 0.3s alternate infinite;
-          animation: monte 0.3s alternate infinite;
+  -webkit-animation: ascend 0.3s alternate infinite;
+          animation: ascend 0.3s alternate infinite;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
@@ -252,8 +252,8 @@ body {
   height: 20px;
   border-radius: 50%;
   background-color: #FF79DA;
-  -webkit-animation: monte 0.3s alternate infinite;
-          animation: monte 0.3s alternate infinite;
+  -webkit-animation: ascend 0.3s alternate infinite;
+          animation: ascend 0.3s alternate infinite;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
@@ -264,8 +264,8 @@ body {
   height: 20px;
   border-radius: 50%;
   background-color: #99E2D0;
-  -webkit-animation: monte 0.3s alternate infinite;
-          animation: monte 0.3s alternate infinite;
+  -webkit-animation: ascend 0.3s alternate infinite;
+          animation: ascend 0.3s alternate infinite;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
@@ -566,8 +566,8 @@ footer ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: checked-apparait 0.5s;
-          animation: checked-apparait 0.5s;
+  -webkit-animation: checked-appear 0.5s;
+          animation: checked-appear 0.5s;
 }
 
 .card:hover {
@@ -725,8 +725,8 @@ footer ul li a:hover {
 }
 
 .card1 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
   -webkit-animation-fill-mode: backwards;
@@ -734,8 +734,8 @@ footer ul li a:hover {
 }
 
 .card2 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
   -webkit-animation-fill-mode: backwards;
@@ -743,8 +743,8 @@ footer ul li a:hover {
 }
 
 .card3 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   -webkit-animation-fill-mode: backwards;
@@ -752,8 +752,8 @@ footer ul li a:hover {
 }
 
 .card4 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
   -webkit-animation-fill-mode: backwards;
@@ -761,8 +761,8 @@ footer ul li a:hover {
 }
 
 .card5 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
   -webkit-animation-fill-mode: backwards;
@@ -770,8 +770,8 @@ footer ul li a:hover {
 }
 
 .card6 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
   -webkit-animation-fill-mode: backwards;
@@ -779,8 +779,8 @@ footer ul li a:hover {
 }
 
 .card7 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
   -webkit-animation-fill-mode: backwards;
@@ -788,8 +788,8 @@ footer ul li a:hover {
 }
 
 .card8 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
   -webkit-animation-fill-mode: backwards;
@@ -797,8 +797,8 @@ footer ul li a:hover {
 }
 
 .card9 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 1.7s;
           animation-delay: 1.7s;
   -webkit-animation-fill-mode: backwards;
@@ -806,8 +806,8 @@ footer ul li a:hover {
 }
 
 .card10 {
-  -webkit-animation: apparait 1s;
-          animation: apparait 1s;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
   -webkit-animation-delay: 1.9s;
           animation-delay: 1.9s;
   -webkit-animation-fill-mode: backwards;
