@@ -116,72 +116,20 @@ h4 {
 }
 
 @-webkit-keyframes ellipsis {
-  0% {
-    width: 130%;
+  50% {
+    width: calc(100% - 80px);
   }
   100% {
-    width: 100%;
+    width: calc(100% - 100px);
   }
 }
 
 @keyframes ellipsis {
-  0% {
-    width: 130%;
+  50% {
+    width: calc(100% - 80px);
   }
   100% {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes checked-appear {
-  0% {
-    visibility: visible;
-    -webkit-transform: translateX(55px);
-            transform: translateX(55px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible;
-  }
-}
-
-@keyframes checked-appear {
-  0% {
-    visibility: visible;
-    -webkit-transform: translateX(55px);
-            transform: translateX(55px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible;
-  }
-}
-
-@-webkit-keyframes price {
-  0% {
-    -webkit-transform: translateX(55px);
-            transform: translateX(55px);
-    visibility: hidden;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible;
-  }
-}
-
-@keyframes price {
-  0% {
-    -webkit-transform: translateX(55px);
-            transform: translateX(55px);
-    visibility: hidden;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible;
+    width: calc(100% - 100px);
   }
 }
 
@@ -546,28 +494,21 @@ footer ul li a:hover {
   overflow: hidden;
 }
 
-.card--menu:hover .card__text__description__right--price {
-  -webkit-animation: price 0.5s;
-          animation: price 0.5s;
-}
-
 .card--menu:hover .checked .fa-check-circle {
   -webkit-animation: rotate 0.5s;
           animation: rotate 0.5s;
 }
 
-.card--menu:hover .card__text__description__title,
-.card--menu:hover .card__text__description__subtitle {
-  -webkit-animation: ellipsis 0.5s;
-          animation: ellipsis 0.5s;
+.card--menu:hover .price-and-check {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
-.card--menu:hover .checked {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: checked-appear 0.5s;
-          animation: checked-appear 0.5s;
+.card--menu:hover .card__text__description--menu {
+  -webkit-animation: ellipsis 1s;
+          animation: ellipsis 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .card:hover {
@@ -621,10 +562,7 @@ footer ul li a:hover {
 }
 
 .card__text__description--menu {
-  width: auto;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  width: calc(100% - 44px);
 }
 
 .card__text__description__title {
@@ -672,12 +610,21 @@ footer ul li a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  background-color: white;
 }
 
 .price-and-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translate(55px);
+          transform: translate(55px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  position: absolute;
+  right: 0px;
 }
 
 .checked {
@@ -700,7 +647,6 @@ footer ul li a:hover {
   border-radius: 0 12px 12px 0;
   font-size: 20px;
   color: white;
-  display: none;
 }
 
 .new {

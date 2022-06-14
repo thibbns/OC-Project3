@@ -16,8 +16,6 @@
         opacity: 0%;
         transform: translateY(10px);
     }
-
-
     100% {
         opacity: 100%;
         transform: translateY(0px);
@@ -28,7 +26,6 @@
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -36,36 +33,10 @@
 
 
 @keyframes ellipsis {
-    0% {
-        width: 130%;
+    50% { width: calc(100% - 80px);      
     }
-
     100% {
-        width: 100%;
+      width: calc(100% - 100px);
     }
 }
 
-
-@keyframes checked-appear {
-    0% {
-        visibility: visible;
-        transform: translateX(55px);
-    }
-
-    100% {
-        transform: translateX(0);
-        visibility: visible;
-    }
-}
-
-@keyframes price {
-    0% {
-        transform: translateX(55px);
-        visibility: hidden;
-    }
-
-    100% {
-        transform: translateX(0);
-        visibility: visible;
-    }
-}
