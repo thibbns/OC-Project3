@@ -12,7 +12,7 @@
 
 h1 {
   margin: 0 0 0 0;
-  font-family: "shrikhand";
+  font-family: "shrikhand", serif, sans-serif;
   font-weight: 100;
   font-size: 28px;
 }
@@ -134,7 +134,7 @@ h4 {
 }
 
 body {
-  font-family: "roboto", arial, "sans serif";
+  font-family: "roboto", serif, sans-serif, arial, "sans serif";
 }
 
 .loader {
@@ -160,12 +160,6 @@ body {
   -webkit-animation: disappear 3s forwards;
           animation: disappear 3s forwards;
   visibility: visible;
-}
-
-.chargement {
-  font-size: 18px;
-  font-weight: 800;
-  color: black;
 }
 
 .anim_loader {
@@ -223,7 +217,7 @@ input[type="text" i]:focus {
   background-color: #EAEAEA;
   border: none;
   width: 130px;
-  font-family: "roboto";
+  font-family: "roboto", serif, sans-serif;
   font-size: 17px;
   text-align: center;
 }
@@ -263,7 +257,7 @@ header {
 }
 
 .logo {
-  font-family: "shrikhand";
+  font-family: "shrikhand", serif, sans-serif;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -395,6 +389,8 @@ footer ul li a:hover {
 }
 
 .number {
+  position: relative;
+  left: -10px;
   background-color: #9356DC;
   width: 22px;
   height: 22px;
@@ -405,8 +401,6 @@ footer ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  left: -10px;
   color: white;
   font-weight: 400;
   font-size: 14px;
@@ -437,6 +431,7 @@ footer ul li a:hover {
 
 .like {
   position: relative;
+  cursor: pointer;
   z-index: 1;
 }
 
@@ -472,19 +467,14 @@ footer ul li a:hover {
   }
 }
 
-.new {
-  position: relative;
-  right: 20px;
-  top: 20px;
-}
-
 .card {
+  cursor: pointer;
+  position: relative;
   width: 48%;
   background-color: white;
   border-radius: 12px 12px 12px 12px;
   -webkit-box-shadow: 0px 3px 10px #c3c3c3;
           box-shadow: 0px 3px 10px #c3c3c3;
-  position: relative;
   color: black;
 }
 
@@ -495,8 +485,8 @@ footer ul li a:hover {
 }
 
 .card--menu:hover .checked .fa-check-circle {
-  -webkit-animation: rotate 0.5s;
-          animation: rotate 0.5s;
+  -webkit-animation: rotate 1s;
+          animation: rotate 1s;
 }
 
 .card--menu:hover .price-and-check {
@@ -505,8 +495,8 @@ footer ul li a:hover {
 }
 
 .card--menu:hover .card__text__description--menu {
-  -webkit-animation: ellipsis 1s;
-          animation: ellipsis 1s;
+  -webkit-animation: ellipsis 0.5s;
+          animation: ellipsis 0.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -597,9 +587,7 @@ footer ul li a:hover {
   font-size: 15px;
   height: 65px;
   font-weight: 600;
-  padding-top: 35px;
-  padding-right: 15px;
-  padding-left: 3px;
+  padding: 35px 15px 0px 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,10 +607,10 @@ footer ul li a:hover {
   display: flex;
   -webkit-transform: translate(55px);
           transform: translate(55px);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   position: absolute;
   right: 0px;
 }
@@ -650,6 +638,9 @@ footer ul li a:hover {
 }
 
 .new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background-color: #99E2D0;
   width: 90px;
   height: 30px;
@@ -663,9 +654,6 @@ footer ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  position: absolute;
-  top: 10px;
-  right: 10px;
   color: #278870;
   font-weight: 500;
 }

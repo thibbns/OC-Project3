@@ -43,14 +43,14 @@
 
 
 .number {
+    position: relative; 
+    left: -10px;
     background-color: $color-primary;
     width: 22px;
     height: 22px;
     border-radius: 11px 11px 11px 11px;
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: -10px;
+    justify-content: center; 
     color: white;
     font-weight: 400;
     font-size: 14px;
@@ -84,7 +84,7 @@
 
 .like {
     position: relative;
-
+    cursor: pointer;
     z-index: 1;
 
     &:hover {
@@ -101,7 +101,6 @@
         right: 0;
         bottom: 0;
         left: 0;
-
         background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
         color: transparent;
         background-clip: text;
