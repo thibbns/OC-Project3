@@ -22,7 +22,7 @@
 .working h3
 {
     margin-top: 0;
-    padding-left: 0 0 0 18px;
+    padding-left:18px;
 }
 
 .buttons__working
@@ -43,7 +43,6 @@
     background-color: $background-color;
     margin-top: 40px;
     padding-bottom: 50px;
-    padding: auto;
 
     &--title
     {
@@ -91,7 +90,7 @@
     background-color: $background-color;
     margin-top: 40px;
     padding-bottom: 0px;
-    padding: auto;
+
 }
 
 .restaurants--title

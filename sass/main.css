@@ -780,7 +780,7 @@ footer ul li a:hover {
 
 .working h3 {
   margin-top: 0;
-  padding-left: 0 0 0 18px;
+  padding-left: 18px;
 }
 
 .buttons__working {
@@ -805,7 +805,6 @@ footer ul li a:hover {
   background-color: #F6F6F6;
   margin-top: 40px;
   padding-bottom: 50px;
-  padding: auto;
 }
 
 .restaurants--title {
@@ -859,7 +858,6 @@ footer ul li a:hover {
     background-color: #F6F6F6;
     margin-top: 40px;
     padding-bottom: 0px;
-    padding: auto;
   }
   .restaurants--title {
     width: 100%;
