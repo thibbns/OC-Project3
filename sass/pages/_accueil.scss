@@ -1,6 +1,4 @@
-
-.explore
-{
+.explore {
     background-color: $background-color;
     text-align: center;
     margin: 0px 0px 0px 0px;
@@ -8,26 +6,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    p
-    {
+
+    p {
         font-size: 18px;
         font-weight: 300;
         margin: 12px 0 32px 0;
         padding: 0 20px 0 20px;
     }
-    
+
 }
 
-.working h3
-{
+.working h3 {
     margin-top: 0;
-    padding-left:18px;
+    padding-left: 18px;
 }
 
-.buttons__working
-{
-    
+.buttons__working {
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,21 +33,18 @@
 
 
 
-.restaurants
-{
+.restaurants {
     background-color: $background-color;
     margin-top: 40px;
     padding-bottom: 50px;
 
-    &--title
-    {
+    &--title {
         width: 760px;
         margin: auto;
     }
 }
-    
-.cards__restaurants
-{
+
+.cards__restaurants {
     width: 760px;
     margin: auto;
     display: flex;
@@ -66,46 +58,40 @@
 
 
 
-@media all and (max-width: 768px) 
-{
+@media all and (max-width: 768px) {
 
-.working h3
-{
-    margin-top: 0;
-    padding-left: 0;
-}
+    .working h3 {
+        margin-top: 0;
+        padding-left: 0;
+    }
 
-.buttons__working
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 270px;
-    justify-content: space-between;
-    margin: auto;
-}
+    .buttons__working {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 270px;
+        justify-content: space-between;
+        margin: auto;
+    }
 
-.restaurants
-{
-    background-color: $background-color;
-    margin-top: 40px;
-    padding-bottom: 0px;
+    .restaurants {
+        background-color: $background-color;
+        margin-top: 40px;
+        padding-bottom: 0px;
 
-}
+    }
 
-.restaurants--title
-{
-    width: 100%;
-}
+    .restaurants--title {
+        width: 100%;
+    }
 
-.cards__restaurants
-{
-    flex-direction: column;
-    flex-wrap: nowrap;        
-    height: 1110px;
-    padding-bottom: 50px;
-    width: 90%;
-}
+    .cards__restaurants {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 1110px;
+        padding-bottom: 50px;
+        width: 90%;
+    }
 
 
 
