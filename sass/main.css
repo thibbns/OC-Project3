@@ -12,7 +12,7 @@
 
 h1 {
   margin: 0 0 0 0;
-  font-family: "shrikhand", serif, sans-serif;
+  font-family: "shrikhand", sans-serif, serif;
   font-weight: 100;
   font-size: 28px;
 }
@@ -161,7 +161,7 @@ h6 {
 }
 
 body {
-  font-family: "roboto", serif, sans-serif, arial, "sans serif";
+  font-family: "roboto", sans-serif, serif, arial, "sans serif";
 }
 
 .loader {
@@ -244,7 +244,7 @@ input[type="text" i]:focus {
   background-color: #EAEAEA;
   border: none;
   width: 130px;
-  font-family: "roboto", serif, sans-serif;
+  font-family: "roboto", sans-serif, serif;
   font-size: 17px;
   text-align: center;
 }
@@ -284,7 +284,7 @@ header {
 }
 
 .logo {
-  font-family: "shrikhand", serif, sans-serif;
+  font-family: "shrikhand", sans-serif, serif;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
