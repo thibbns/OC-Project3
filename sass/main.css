@@ -34,6 +34,33 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-weight: 600;
+  font-size: 19px;
+  padding-bottom: 3px;
+  margin: 0 0 0 0;
+}
+
+.card__text__description--menu h5 {
+  font-size: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h6 {
+  font-size: 16px;
+  margin: 0 0 0 0;
+  font-weight: 400;
+}
+
+.card__text__description--menu h6 {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 @media all and (max-width: 768px) {
   .main-wrapper {
     width: 100%;
@@ -553,30 +580,6 @@ footer ul li a:hover {
 
 .card__text__description--menu {
   width: calc(100% - 44px);
-}
-
-.card__text__description__title {
-  font-weight: 600;
-  font-size: 19px;
-  padding-bottom: 3px;
-}
-
-.card__text__description__title--menu {
-  font-size: 17px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.card__text__description__subtitle {
-  font-size: 16px;
-}
-
-.card__text__description__subtitle--menu {
-  font-size: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .card__text__description__right {

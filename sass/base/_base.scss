@@ -39,6 +39,30 @@ h4{
     font-weight: 400;
 }
 
+h5 {
+    font-weight: 600;
+    font-size: 19px;
+    padding-bottom: 3px;
+    margin: 0 0 0 0;
+}
+ 
+.card__text__description--menu h5 {
+        font-size: 17px;
+        @include ellipsis;
+    }
+
+
+h6 {
+    font-size: 16px;
+    margin: 0 0 0 0;
+    font-weight: 400;
+}
+
+.card__text__description--menu h6 {
+    font-size: 15px;
+    @include ellipsis;
+}
+
 
 
 @media all and (max-width: 768px) 

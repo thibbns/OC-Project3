@@ -73,26 +73,6 @@
     }
 }
 
-.card__text__description__title {
-    font-weight: 600;
-    font-size: 19px;
-    padding-bottom: 3px;
-
-    &--menu {
-        font-size: 17px;
-        @include ellipsis;
-    }
-}
-
-.card__text__description__subtitle {
-    font-size: 16px;
-
-    &--menu {
-        font-size: 15px;
-        @include ellipsis;
-    }
-}
-
 .card__text__description__right {
     font-size: 25px;
 
