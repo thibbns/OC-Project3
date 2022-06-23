@@ -5,11 +5,6 @@
   text-decoration: none;
 }
 
-.main-wrapper {
-  width: 760px;
-  margin: 0 auto 0 auto;
-}
-
 h1 {
   margin: 0 0 0 0;
   font-family: "shrikhand", sans-serif, serif;
@@ -59,13 +54,6 @@ h6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-@media all and (max-width: 768px) {
-  .main-wrapper {
-    width: 100%;
-    margin: 0 auto 0 auto;
-  }
 }
 
 @-webkit-keyframes ascend {
@@ -162,6 +150,18 @@ h6 {
 
 body {
   font-family: "roboto", sans-serif, serif, arial, "sans serif";
+}
+
+.main-wrapper {
+  width: 760px;
+  margin: 0 auto 0 auto;
+}
+
+@media all and (max-width: 768px) {
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
 }
 
 .loader {
@@ -473,13 +473,13 @@ footer ul li a:hover {
   right: 0;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  z-index: -1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 0;
-  z-index: -1;
   -webkit-transition: opacity ease-in-out 1s;
   transition: opacity ease-in-out 1s;
 }
@@ -572,10 +572,6 @@ footer ul li a:hover {
           justify-content: space-between;
   padding: 0px 0px 0px 10px;
   height: 65px;
-}
-
-.card__text__description {
-  width: 90%;
 }
 
 .card__text__description--menu {

@@ -101,14 +101,13 @@
         right: 0;
         bottom: 0;
         left: 0;
+        opacity: 0;
+        z-index: -1;
         background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
         color: transparent;
         background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        z-index: -1;
+        -webkit-background-clip: text;     
         transition: opacity ease-in-out 1s;
-
     }
 }
 
