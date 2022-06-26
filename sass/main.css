@@ -522,10 +522,7 @@ footer ul li a:hover {
 }
 
 .card--menu:hover .card__text__description--menu {
-  -webkit-animation: ellipsis 0.5s;
-          animation: ellipsis 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  width: calc(100% - 100px);
 }
 
 .card:hover {
@@ -576,6 +573,8 @@ footer ul li a:hover {
 
 .card__text__description--menu {
   width: calc(100% - 44px);
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .card__text__description__right {
