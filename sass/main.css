@@ -130,24 +130,6 @@ h6 {
   }
 }
 
-@-webkit-keyframes ellipsis {
-  50% {
-    width: calc(100% - 80px);
-  }
-  100% {
-    width: calc(100% - 100px);
-  }
-}
-
-@keyframes ellipsis {
-  50% {
-    width: calc(100% - 80px);
-  }
-  100% {
-    width: calc(100% - 100px);
-  }
-}
-
 body {
   font-family: "roboto", sans-serif, serif, arial, "sans serif";
 }
